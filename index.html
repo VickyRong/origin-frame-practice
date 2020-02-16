@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+    <link href="lib/antd.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <h2>Add React in One Minute</h2>
+    <p>This page demonstrates using React with no build tooling.</p>
+    <p>React is loaded as a script tag.</p>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="like_button_container"></div>
+    <div id="demo"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="lib/moment.js"></script>
+    <script src="lib/react.development.js" crossorigin></script>
+    <script src="lib/react-dom.development.js" crossorigin></script>
+    <script src="lib/antd.js"></script>
+
+    <!-- Load our React component. -->
+    <!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    <!-- <script type="text/babel" src="/src/like_button.js.js"></script> -->
+    <script src="like_button.js"></script>
+  </body>
+</html>
