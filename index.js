@@ -103,4 +103,4 @@ var Demo = function (_React$Component) {
   return Demo;
 }(React.Component);
 
-ReactDOM.render(React.createElement(Demo, null), document.querySelector('#like_button_container'));
+ReactDOM.render(React.createElement(Demo, null), document.querySelector('#demo'));

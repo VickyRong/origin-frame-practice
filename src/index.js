@@ -103,4 +103,4 @@ class Demo extends React.Component {
   }
 }
 
-ReactDOM.render(<Demo />, document.querySelector('#like_button_container'));
+ReactDOM.render(<Demo />, document.querySelector('#demo'));
