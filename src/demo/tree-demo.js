@@ -47,7 +47,7 @@ const treeData = [
   },
 ];
 
-class AntdTree extends React.Component {
+class TreeDemo extends React.Component {
   state = {
     expandedKeys: ['0-0-0', '0-0-1'],
     autoExpandParent: true,
@@ -89,7 +89,9 @@ class AntdTree extends React.Component {
 
   render() {
     return (
-      <Tree
+      <>
+        <h3>【 树形结构 】</h3>
+        <Tree
         checkable
         onExpand={this.onExpand}
         expandedKeys={this.state.expandedKeys}
@@ -101,8 +103,9 @@ class AntdTree extends React.Component {
       >
         {this.renderTreeNodes(treeData)}
       </Tree>
+      </>
     );
   }
 }
 
-export default AntdTree;
+export default TreeDemo;

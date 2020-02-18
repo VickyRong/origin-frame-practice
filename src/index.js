@@ -16,21 +16,24 @@
 /**
  * 引入JSX语法
  */
-import './antd.min.css';
+import './style/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from 'antd';
-import AntdDemo from './antd-demo'
+import TreeDemo from './demo/tree-demo'
+import ButtonDemo from './demo/button-demo'
+import MockDemo from './demo/mock-demo'
 
 ReactDOM.render(
-  <div>
-    <Button type="primary">Primary</Button>
-    <Button>Default</Button>
-    <Button type="dashed">Dashed</Button>
-    <Button type="danger">Danger</Button>
-    <Button type="link">Link</Button>
-    
-    <AntdDemo></AntdDemo>
+  <div className="container">
+    <div className="g-mb-20">
+      <ButtonDemo/>
+    </div>
+    <div className="g-mb-20">
+      <TreeDemo/>
+    </div>
+    <div className="g-mb-20">
+      <MockDemo/>
+    </div>
   </div>,
   document.querySelector('#root'),
 );
