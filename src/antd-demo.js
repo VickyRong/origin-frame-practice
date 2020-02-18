@@ -45,7 +45,7 @@ const treeData = [
   },
 ];
 
-class Demo extends React.Component {
+class AntdTree extends React.Component {
   state = {
     expandedKeys: ['0-0-0', '0-0-1'],
     autoExpandParent: true,
@@ -103,4 +103,4 @@ class Demo extends React.Component {
   }
 }
 
-ReactDOM.render(<Demo />, document.querySelector('#demo'));
+ReactDOM.render(<AntdTree />, document.querySelector('#root'));
