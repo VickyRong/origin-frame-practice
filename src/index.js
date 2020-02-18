@@ -20,6 +20,7 @@ import './antd.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from 'antd';
+import AntdDemo from './antd-demo'
 
 ReactDOM.render(
   <div>
@@ -28,6 +29,8 @@ ReactDOM.render(
     <Button type="dashed">Dashed</Button>
     <Button type="danger">Danger</Button>
     <Button type="link">Link</Button>
+    
+    <AntdDemo></AntdDemo>
   </div>,
   document.querySelector('#root'),
 );

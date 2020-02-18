@@ -1,5 +1,7 @@
-const Tree = antd.Tree;
-const TreeNode = Tree.TreeNode;
+
+import React from 'react';
+import { Tree } from 'antd';
+const { TreeNode } = Tree;
 
 const treeData = [
   {
@@ -103,4 +105,4 @@ class AntdTree extends React.Component {
   }
 }
 
-ReactDOM.render(<AntdTree />, document.querySelector('#root'));
+export default AntdTree;
