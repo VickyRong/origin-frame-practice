@@ -22,6 +22,7 @@ import ReactDOM from 'react-dom';
 import TreeDemo from './demo/tree-demo'
 import ButtonDemo from './demo/button-demo'
 import MockDemo from './demo/mock-demo'
+import RequestDemo from './demo/request-demo'
 
 ReactDOM.render(
   <div className="container">
@@ -33,6 +34,9 @@ ReactDOM.render(
     </div>
     <div className="g-mb-20">
       <MockDemo/>
+    </div>
+    <div className="g-mb-20">
+      <RequestDemo/>
     </div>
   </div>,
   document.querySelector('#root'),
