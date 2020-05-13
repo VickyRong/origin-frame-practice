@@ -12,4 +12,4 @@ app.post('/getUserInfo',function(req,res){
     res.send(userInfo)
 });
 
-app.listen(3000,()=> console.log('listening on port 3000!'))
+app.listen(3030,()=> console.log('listening on port 3030!'))
