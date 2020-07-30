@@ -2,8 +2,13 @@
  * 引入JSX语法
  */
 import React from 'react';
-import { BrowserRouter as Router, Route, Link,Switch} from "react-router-dom";
-import routeConfig from './router/route'
+import { Router, Route, Link,Switch } from "react-router-dom";
+import { createBrowserHistory } from "history";
+
+import routeConfig from './router/route';
+import './style/index.css';
+
+const customHistory = createBrowserHistory();
 
 const NavList =
 <>
@@ -18,7 +23,8 @@ const NavList =
 class App extends React.Component{
   render(){
     return (
-        <Router>
+      <div className="container">
+          <Router history={customHistory}>
            { NavList }
             <Switch>
               {
@@ -34,7 +40,8 @@ class App extends React.Component{
                 ))
               }
             </Switch>
-      </Router>
+        </Router>
+      </div>
     )
   }
 }
