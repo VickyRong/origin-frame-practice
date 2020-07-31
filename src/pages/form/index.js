@@ -28,8 +28,7 @@ class FormPage extends  React.Component{
             <form onSubmit={this.handleSubmit}>
                 {/**input */}
                 <label>
-                    名字:
-                    <input type="text" name="name" value={inputValue} onChange={(e)=>this.handleChange('inputValue',e)} />
+                    名字 : <input type="text" name="name" value={inputValue} onChange={(e)=>this.handleChange('inputValue',e)} />
                 </label>
                 {/**下拉选择 */}
                 <select value={selectValue} onChange={(e)=>this.handleChange('selectValue',e)}>
